@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+</head>
+<body>
+    <center>
+    <h1>Cotización de Automóvil</h1>
+    <form id="coti">
+        <label for="descripcion">Descripción del Automóvil:</label>
+        <input type="text" id="descripcion" required>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" required>
+
+        <label for="porcentajeInicial">Porcentaje de Pago Inicial (%):</label>
+        <input type="number" id="porcentajeInicial" required>
+
+        <label for="plazoOpcion">Plazo (en meses):</label>
+        <select id="plazoOpcion" required>
+            <option value="12">12 Meses</option>
+            <option value="24">24 Meses</option>
+            <option value="36">36 Meses</option>
+            <option value="48">48 Meses</option>
+        </select>
+
+        <button type="button" id="calcularResultado">Calcular</button>
+        <br>
+        <br>
+        <label for="">Descripción: </label>
+            <input type="text" name="" id="idDescripcion">
+            <br>
+            <br>
+            <label for="">Precio: </label>
+            <input type="text" name="" id="idPrecio">
+            <br>
+            <br>
+            <label for="">% Pago inicial: </label>
+            <input type="text" name="" id="pagoInicial">
+            <br>
+            <br>
+            <label for="">Plazo: </label>
+            <input type="text" name="" id="plazo">
+            <br>
+            <br>
+            <label for="">Pago total a financiar: </label>
+            <input type="text" name="" id="pagoFinanciar">
+            <br>
+            <br>
+            <label for="">Pago Mensual</label>
+            <input type="text" name="" id="pagoMensual">
+            <br>
+            <br>
+            <button type="button" id="calcularLimpiar">Limpiar</button>
+    </form>
+
+</center>
+    <script src="/js/cotizacion.js"></script>
+</body>
+</html>
